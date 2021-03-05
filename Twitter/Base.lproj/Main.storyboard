@@ -17,17 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="TwitterLogoBlue" translatesAutoresizingMaskIntoConstraints="NO" id="SNZ-bg-sGH">
+                                <rect key="frame" x="87.5" y="80" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Jlc-H5-xds"/>
+                                    <constraint firstAttribute="height" constant="200" id="Wp5-ic-fuu"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTx-mq-RoP">
-                                <rect key="frame" x="95" y="306.5" width="185" height="54"/>
-                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="72.5" y="353" width="230" height="54"/>
+                                <color key="backgroundColor" red="0.050176553428173065" green="0.61783766746520996" blue="0.99000424146652222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="ICy-is-ntL"/>
-                                    <constraint firstAttribute="width" constant="185" id="yRn-hc-3Nj"/>
+                                    <constraint firstAttribute="width" constant="230" id="yRn-hc-3Nj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Login">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Login with Twitter">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onLoginButton:" destination="hbw-k2-L6D" eventType="touchUpInside" id="xCm-zz-1ZO"/>
                                 </connections>
@@ -36,8 +48,10 @@
                         <viewLayoutGuide key="safeArea" id="Kes-oS-N4c"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="SNZ-bg-sGH" firstAttribute="centerY" secondItem="MSn-7z-jQo" secondAttribute="centerY" constant="-153.5" id="2kE-ar-MnP"/>
                             <constraint firstItem="NTx-mq-RoP" firstAttribute="centerX" secondItem="MSn-7z-jQo" secondAttribute="centerX" id="3Fd-xs-p1j"/>
-                            <constraint firstItem="NTx-mq-RoP" firstAttribute="centerY" secondItem="MSn-7z-jQo" secondAttribute="centerY" id="6Nu-Le-otG"/>
+                            <constraint firstItem="SNZ-bg-sGH" firstAttribute="centerX" secondItem="MSn-7z-jQo" secondAttribute="centerX" id="50o-kw-Txp"/>
+                            <constraint firstItem="NTx-mq-RoP" firstAttribute="centerY" secondItem="MSn-7z-jQo" secondAttribute="centerY" constant="46.5" id="QTK-PW-I42"/>
                         </constraints>
                     </view>
                     <connections>
@@ -130,7 +144,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hbf-XW-OPW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.050176553428173065" green="0.61783766746520996" blue="0.99000424146652222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -145,6 +159,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TwitterLogoBlue" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
