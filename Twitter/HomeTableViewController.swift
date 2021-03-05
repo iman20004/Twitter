@@ -53,6 +53,13 @@ class HomeTableViewController: UITableViewController {
         cell.userNameLabel.text = user["name"] as? String
         cell.tweetContent.text = tweetArray[indexPath.row]["text"] as? String
         
+        let imageURL = URL(string: (user["profile_image_url_https"] as? String)!)
+        let data = try? Data(contentsOf: imageURL!)
+        
+        if let imageData = data {
+            cell.profileImageView.image = UIImage(data: imageData)
+        }
+        
         return cell
     }
     
@@ -65,7 +72,7 @@ class HomeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
         return tweetArray.count
     }
 
