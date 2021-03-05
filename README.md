@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:<br>
----------------General---------------------Stay Logged in--------------------Pull Refresh & Infinite scrolling------------
+---------------General---------------------Stay Logged in---------------Pull Refresh & Infinite scrolling------
 
 <img src='http://g.recordit.co/G1CDzAKaU5.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' /> <img src='http://g.recordit.co/SfEMgXELjS.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' /><img src='http://g.recordit.co/SfEMgXELjS.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 
