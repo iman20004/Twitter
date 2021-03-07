@@ -62,7 +62,7 @@
             </objects>
             <point key="canvasLocation" x="201" y="212"/>
         </scene>
-        <!--Home-->
+        <!--Twitter-->
         <scene sceneID="x6h-AD-C3q">
             <objects>
                 <tableViewController id="WvU-mG-XY8" customClass="HomeTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,15 +152,15 @@
                             <outlet property="delegate" destination="WvU-mG-XY8" id="vz9-sl-Cy6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Home" id="AWE-08-YbT">
+                    <navigationItem key="navigationItem" title="Twitter" id="AWE-08-YbT">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="9ZP-xW-jYT">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.050176553428173065" green="0.61783766746520996" blue="0.99000424146652222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="onLogout:" destination="WvU-mG-XY8" id="Byk-CY-uTw"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Tweet" style="plain" id="MdI-SP-xO4">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" image="edit-icon" style="plain" id="MdI-SP-xO4">
+                            <color key="tintColor" red="0.050176553428173065" green="0.61783766746520996" blue="0.99000424146652222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="eLZ-dG-Imh" kind="presentation" id="eTq-D1-0Ly"/>
                             </connections>
@@ -199,14 +199,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VIM-5J-zCM">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" style="plain" id="gTE-1g-Et5">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="leftBarButtonItem" image="close-icon" style="plain" id="gTE-1g-Et5">
+                            <color key="tintColor" red="0.050176553428173065" green="0.61783766746520996" blue="0.99000424146652222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="cancel:" destination="FLn-q2-MMz" id="O1O-0q-yJu"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Tweet" style="plain" id="vS3-ab-oMp">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.050176553428173065" green="0.61783766746520996" blue="0.99000424146652222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="tweet:" destination="FLn-q2-MMz" id="dol-73-iLh"/>
                             </connections>
@@ -227,9 +227,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hbf-XW-OPW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.050176553428173065" green="0.61783766746520996" blue="0.99000424146652222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -248,7 +247,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gkt-Aw-I96">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.050176553428173065" green="0.61783766746520996" blue="0.99000424146652222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -262,6 +260,8 @@
     </scenes>
     <resources>
         <image name="TwitterLogoBlue" width="200" height="200"/>
+        <image name="close-icon" width="26" height="24"/>
+        <image name="edit-icon" width="30" height="27"/>
         <image name="favor-icon" width="30" height="30"/>
         <image name="retweet-icon" width="30" height="30"/>
         <systemColor name="labelColor">
