@@ -10,13 +10,20 @@ import UIKit
 
 class TweetViewController: UIViewController {
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func tweet(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

@@ -133,6 +133,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Tweet" style="plain" id="MdI-SP-xO4">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="eLZ-dG-Imh" kind="presentation" id="eTq-D1-0Ly"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
@@ -170,9 +173,15 @@
                     <navigationItem key="navigationItem" id="VIM-5J-zCM">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" style="plain" id="gTE-1g-Et5">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancel:" destination="FLn-q2-MMz" id="O1O-0q-yJu"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Tweet" style="plain" id="vS3-ab-oMp">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="tweet:" destination="FLn-q2-MMz" id="dol-73-iLh"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -203,7 +212,7 @@
         <!--Navigation Controller-->
         <scene sceneID="V1J-ek-87G">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eLZ-dG-Imh" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="eLZ-dG-Imh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gkt-Aw-I96">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
