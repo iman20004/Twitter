@@ -10,11 +10,12 @@ import UIKit
 
 class TweetViewController: UIViewController {
 
-
+    @IBOutlet weak var tweetContent: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tweetContent.becomeFirstResponder()
     }
     
     @IBAction func cancel(_ sender: Any) {
@@ -23,6 +24,16 @@ class TweetViewController: UIViewController {
     
     
     @IBAction func tweet(_ sender: Any) {
+        if (!tweetContent.text.isEmpty){
+            TwitterAPICaller.client?.postTweet(tweetString: tweetContent.text, success: {
+                self.dismiss(animated: true, completion: nil)
+            }, failure: { (Error) in
+                print("Error posting tweet \(Error)")
+                self.dismiss(animated: true, completion: nil)
+            })
+            }else{
+                self.dismiss(animated: true, completion: nil)
+            }
     }
     /*
     // MARK: - Navigation
